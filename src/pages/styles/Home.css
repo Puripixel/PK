@@ -1,0 +1,72 @@
+/* Home.css */
+
+/* กำหนดค่าพื้นฐาน */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* กำหนดสไตล์สำหรับคอนเทนเนอร์หลัก */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* การจัดการข้อความ */
+  .text-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .headline {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* สไตล์สำหรับปุ่ม */
+  .cta-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #3498db;
+  }
+  
+  .cta-button:focus {
+    outline: none;
+  }
+  

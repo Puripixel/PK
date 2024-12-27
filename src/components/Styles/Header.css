@@ -1,0 +1,12 @@
+.bg-golden {
+  background-color: #FFD700; /* Golden color */
+}
+
+.text-white {
+  color: #ffffff; /* White text */
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
