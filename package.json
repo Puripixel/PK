@@ -2,6 +2,7 @@
   "name": "pk",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://puripixel.github.io/PK/",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
