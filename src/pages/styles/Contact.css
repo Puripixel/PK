@@ -1,21 +1,23 @@
 /* styles/Contact.css */
 
+/* ส่วนที่แสดงข้อมูลติดต่อ */
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-color: #f1f7fb;
-    padding: 20px;
+    flex-direction: column;
+    background-color: #f9fafb;
+    padding: 40px;
+    height: 150vh;
   }
   
   .contact-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
   }
   
   .contact-title {
@@ -27,16 +29,71 @@
   
   .contact-info {
     font-size: 1.2rem;
-    color: #444;
+    color: #555;
+    margin-bottom: 30px;
   }
   
   .info-item {
     margin: 10px 0;
-    line-height: 1.6;
   }
   
-  .info-item strong {
-    color: #007bff;
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  button.submit-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ฝังแผนที่ */
+  .google-map-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   @media (max-width: 768px) {
@@ -48,8 +105,20 @@
       font-size: 2rem;
     }
   
-    .contact-info {
+    .info-item, h2 {
+      font-size: 1.2rem;
+    }
+  
+    input, textarea {
       font-size: 1rem;
+    }
+  
+    button.submit-button {
+      font-size: 1rem;
+    }
+  
+    .google-map-container iframe {
+      height: 300px;
     }
   }
   
